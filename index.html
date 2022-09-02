@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>QuizApp</title>
+</head>
+<body>
+   <main>
+       <div class="container" id='container'>
+           <div class="quastion">
+               <h3 id='question'>question</h3>
+           </div>
+           <div class="option">
+               <ul class="options_list">
+                   <li class="option_item a" id='a'>
+                       <input type='radio' id='a' class='answer' />
+                       <label for="a" id='a_text'>a</label>
+                   </li>
+                   <li class="option_item" id='b'>
+                        <input type='radio' id='b' class='answer' />
+                        <label for="b"  id='b_text'>b</label>
+                   </li>
+                   <li class="option_item c" id='c'>
+                        <input type='radio' id='c' class='answer'/>
+                        <label for="c"  id='c_text'>c</label>
+                   </li>
+                   <li class="option_item d" id='d'>
+                        <input type='radio' id='d' class='answer'/>
+                        <label for="d"  id='d_text'>d</label>
+                   </li>
+               </ul>
+           </div>
+           <div class="btn">
+               <button type='submit' id='valdate'> Validate </button>
+           </div>
+       </div>
+       <div class="score" id='score_container'>
+           <div class="quastion">
+              <h3>Your Score Is </h3>
+           </div>
+           <div class="quastion">
+              <h4 class="text" id="score">
+              </h4>
+           </div> 
+       </div>
+   </main> 
+   <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
